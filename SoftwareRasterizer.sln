@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRasterizer", "SimpleRasterizer\SimpleRasterizer.csproj", "{F85B68FF-CBCB-4F99-9730-F728C6B3C4F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{436DC8C3-7E6A-4F2E-B52B-3BFD62EAE369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilhouetteRasterizer", "SilhouetteRasterizer\SilhouetteRasterizer.csproj", "{34D2ED9C-CF7B-4CF3-B2CD-EB8C2DB9DEEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteableBitmapWindow", "WritableBitmapWindow\WriteableBitmapWindow.csproj", "{46641944-283D-482F-9368-663AEE8C5469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWindowedRasterizer", "SimpleWindowedRasterizer\SimpleWindowedRasterizer.csproj", "{A343BBC1-9DFD-4058-B411-3088D4F28AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPURasterizer", "GPURasterizer\GPURasterizer.csproj", "{C4F26FEB-CED9-42D9-8360-14BB82C372AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneBitRasterizer", "OneBitRasterizer\OneBitRasterizer.csproj", "{62B03671-D57B-4607-9AB3-6447BCDBEA60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F85B68FF-CBCB-4F99-9730-F728C6B3C4F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85B68FF-CBCB-4F99-9730-F728C6B3C4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85B68FF-CBCB-4F99-9730-F728C6B3C4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85B68FF-CBCB-4F99-9730-F728C6B3C4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436DC8C3-7E6A-4F2E-B52B-3BFD62EAE369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436DC8C3-7E6A-4F2E-B52B-3BFD62EAE369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436DC8C3-7E6A-4F2E-B52B-3BFD62EAE369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436DC8C3-7E6A-4F2E-B52B-3BFD62EAE369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D2ED9C-CF7B-4CF3-B2CD-EB8C2DB9DEEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D2ED9C-CF7B-4CF3-B2CD-EB8C2DB9DEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D2ED9C-CF7B-4CF3-B2CD-EB8C2DB9DEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D2ED9C-CF7B-4CF3-B2CD-EB8C2DB9DEEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46641944-283D-482F-9368-663AEE8C5469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46641944-283D-482F-9368-663AEE8C5469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46641944-283D-482F-9368-663AEE8C5469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46641944-283D-482F-9368-663AEE8C5469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A343BBC1-9DFD-4058-B411-3088D4F28AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A343BBC1-9DFD-4058-B411-3088D4F28AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A343BBC1-9DFD-4058-B411-3088D4F28AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A343BBC1-9DFD-4058-B411-3088D4F28AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4F26FEB-CED9-42D9-8360-14BB82C372AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F26FEB-CED9-42D9-8360-14BB82C372AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4F26FEB-CED9-42D9-8360-14BB82C372AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F26FEB-CED9-42D9-8360-14BB82C372AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62B03671-D57B-4607-9AB3-6447BCDBEA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62B03671-D57B-4607-9AB3-6447BCDBEA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62B03671-D57B-4607-9AB3-6447BCDBEA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62B03671-D57B-4607-9AB3-6447BCDBEA60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F91998F0-4EC9-47B1-9D68-51DC29B09C81}
+	EndGlobalSection
+EndGlobal
