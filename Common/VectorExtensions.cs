@@ -1,9 +1,5 @@
-﻿using SharpDX;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using SharpDX;
+using System.Numerics;
 
 namespace RasterizerCommon
 {
@@ -46,6 +42,11 @@ namespace RasterizerCommon
         public static Vector3 ToVector3(this Vector4 a)
         {
             return new Vector3(a.X, a.Y, a.Z);
+        }
+
+        public static void Normalize(this Vector3 a)
+        {
+            a = Vector3.Normalize(a);
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using RasterizerCommon;
-using SharpDX;
+//using SharpDX;
+using System.Numerics;
+using Matrix = System.Numerics.Matrix4x4;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -31,14 +33,14 @@ namespace SilhouetteRasterizer
             //var worldMatrix = Matrix.Identity;
             //var worldMatrix = Matrix.Translation(-2, 1, 50);
             //var worldMatrix = Matrix.Translation(-2, 1, 50) * Matrix.RotationY(rotationAngle);
-            var worldMatrix = Matrix.RotationY(rotationAngle) * Matrix.Translation(-2, 1, 50); //correct
+            var worldMatrix = Matrix.CreateRotationY(rotationAngle) * Matrix.CreateTranslation(-2, 1, 50); //correct
 
             var cameraPos = new Vector3(0, 0, -1);
             var cameraTarget = new Vector3(0, 0, 0);
             var cameraUp = new Vector3(0, 1, 0);
-            var viewMatrix = Matrix.LookAtLH(cameraPos, cameraTarget, cameraUp);
+            var viewMatrix = MatrixExtensions.LookAtLH(cameraPos, cameraTarget, cameraUp);
             //var projMatrix = Matrix.PerspectiveLH(outputResolution.X, outputResolution.Y, 0.01f, 1000f);
-            var projMatrix = Matrix.PerspectiveFovLH((float)Math.PI / 3f, outputResolution.X / outputResolution.Y, 0.01f, 1000f);
+            var projMatrix = MatrixExtensions.PerspectiveFovLH((float)Math.PI / 3f, outputResolution.X / outputResolution.Y, 0.01f, 1000f);
 
             var viewProjMatrix = Matrix.Multiply(viewMatrix, projMatrix);
                 

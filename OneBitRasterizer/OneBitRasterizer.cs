@@ -1,5 +1,7 @@
 ﻿using RasterizerCommon;
-using SharpDX;
+//using SharpDX;
+using System.Numerics;
+using Matrix = System.Numerics.Matrix4x4;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -209,12 +211,12 @@ namespace OneBitRasterizer
             // https://gist.github.com/axefrog/b51b4e149c329608eae6
             //var worldMatrix = Matrix.Translation(-2, 1, 5); //Matrix.Identity;
             var rotationAngle = angleInDegrees++ * (3.1415f / 180);
-            var worldMatrix = Matrix.RotationY(rotationAngle) * Matrix.Translation(-2, 1, 5); //gourd
+            var worldMatrix = Matrix.CreateRotationY(rotationAngle) * Matrix.CreateTranslation(-2, 1, 5); //gourd
             //var worldMatrix = Matrix.RotationY(rotationAngle) * Matrix.Translation(-2, 1, 50); //face
 
-            Matrix viewMatrix = Matrix.LookAtLH(new Vector3(0, 0, -1), new Vector3(0, 0, 0), new Vector3(0, 1, 0));
+            Matrix viewMatrix = MatrixExtensions.LookAtLH(new Vector3(0, 0, -1), new Vector3(0, 0, 0), new Vector3(0, 1, 0));
             //Matrix projMatrix = Matrix.PerspectiveLH(outputResolution.X, outputResolution.Y, 0.01f, 1000f);
-            Matrix projMatrix = Matrix.PerspectiveFovLH((float)Math.PI / 3f, outputResolution.X / outputResolution.Y, 0.01f, 1000f);
+            Matrix projMatrix = MatrixExtensions.PerspectiveFovLH((float)Math.PI / 3f, outputResolution.X / outputResolution.Y, 0.01f, 1000f);
 
             var viewProjMatrix = Matrix.Multiply(viewMatrix, projMatrix);
             var worldViewProjMatrix = worldMatrix * viewProjMatrix;
